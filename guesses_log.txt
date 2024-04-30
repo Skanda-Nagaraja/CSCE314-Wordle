@@ -1,0 +1,26 @@
+Target Word: singe
+ADIEU
+Target Word: glyph
+ADIEU
+GLYPH
+Session End
+Target Word: husky
+ADIEU
+Target Word: flick
+Target Word: grind
+ADIEU
+GRIND
+Session End
+Target Word: snide
+ADIEU
+ADIEU
+Target Word: musty
+MUSTY
+Session End
+Target Word: medic
+ADIEU
+MEDIC
+Session End
+Target Word: humid
+ADIEU
+Target Word: fleck

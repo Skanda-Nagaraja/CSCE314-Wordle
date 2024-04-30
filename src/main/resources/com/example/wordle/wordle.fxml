@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="mainVBox" alignment="CENTER" prefHeight="800.0" prefWidth="566.0" spacing="20.0" style="-fx-background-color: ANTIQUEWHITE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wordle.gameBoard">
+ <padding>
+<Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+ </padding>
+ <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="193.0" text="WORDLE" textFill="#6b8063">
+<font>
+ <Font size="24.0" />
+</font>
+ </Label>
+ <!-- Game grid rows -->
+ <VBox spacing="10">
+<!-- Each HBox is a row of the game board, containing five Label elements for letter positions -->
+<!-- Row 0 -->
+<HBox alignment="CENTER" prefHeight="100.0" prefWidth="349.0" spacing="5">
+ <Label fx:id="pos00" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px; " />
+ <Label fx:id="pos10" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos20" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos30" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos40" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+</HBox>
+<HBox alignment="CENTER" prefHeight="100.0" prefWidth="349.0" spacing="5">
+ <Label fx:id="pos01" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos11" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos21" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos31" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos41" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+</HBox>
+<HBox alignment="CENTER" prefHeight="100.0" prefWidth="349.0" spacing="5">
+ <Label fx:id="pos02" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos12" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos22" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos32" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos42" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+</HBox>
+<HBox alignment="CENTER" prefHeight="100.0" prefWidth="349.0" spacing="5">
+ <Label fx:id="pos03" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos13" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos23" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos33" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos43" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+</HBox>
+<HBox alignment="CENTER" prefHeight="100.0" prefWidth="349.0" spacing="5">
+ <Label fx:id="pos04" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos14" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos24" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos34" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos44" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+</HBox>
+<HBox alignment="CENTER" prefHeight="100.0" prefWidth="349.0" spacing="5">
+ <Label fx:id="pos05" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos15" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos25" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos35" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+ <Label fx:id="pos45" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-border-width: 2px;" />
+</HBox>
+
+ </VBox>
+ <!-- On-screen keyboard -->
+ <VBox spacing="5">
+<!-- First Row -->
+<HBox alignment="CENTER" spacing="5">
+ <Label fx:id="keyQ" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="Q" />
+ <Label fx:id="keyW" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="W" />
+ <Label fx:id="keyE" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="E" />
+ <Label fx:id="keyR" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="R" />
+ <Label fx:id="keyT" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="T" />
+ <Label fx:id="keyY" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="Y" />
+ <Label fx:id="keyU" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="U" />
+ <Label fx:id="keyI" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="I" />
+ <Label fx:id="keyO" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="O" />
+ <Label fx:id="keyP" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="P" />
+</HBox>
+<!-- Second Row -->
+<HBox alignment="CENTER" spacing="5">
+ <Label fx:id="keyA" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="A" />
+ <Label fx:id="keyS" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="S" />
+ <Label fx:id="keyD" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="D" />
+ <Label fx:id="keyF" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="F" />
+ <Label fx:id="keyG" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="G" />
+ <Label fx:id="keyH" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="H" />
+ <Label fx:id="keyJ" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="J" />
+ <Label fx:id="keyK" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="K" />
+ <Label fx:id="keyL" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="L" />
+</HBox>
+<!-- Third Row -->
+<HBox alignment="CENTER" spacing="5">
+ <Label fx:id="keyZ" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="Z" />
+ <Label fx:id="keyX" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="X" />
+ <Label fx:id="keyC" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="C" />
+ <Label fx:id="keyV" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="V" />
+ <Label fx:id="keyB" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="B" />
+ <Label fx:id="keyN" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="N" />
+ <Label fx:id="keyM" onMouseClicked="#handleKeyPress" style="-fx-padding: 10px;-fx-border-color: black; -fx-border-width: 2px; -fx-border-width: 2px; -fx-text-fill: black; -fx-font-size: 16px; -fx-cursor: hand;" text="M" />
+</HBox>
+
+ </VBox>
+ <Label fx:id="welcomeText" />
+<!-- //<Button fx:id="checkGuess" minHeight="-Infinity" minWidth="-Infinity" onAction="#checkGuess" style="-fx-background-color: FLORALWHITE;" text="CHECK" textFill="#835757" />-->
+ <Button fx:id="resetButton" layoutX="264.0" layoutY="782.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#onResetButtonClicked" style="-fx-background-color: FLORALWHITE;" text="Reset" textFill="#835757" />
+ <Button fx:id="resetGameButton" layoutX="264.0" layoutY="782.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#onLoadGameClicked" style="-fx-background-color: FLORALWHITE;" text="Load Last Game" textFill="#835757" />
+ <!-- <Button fx:id="again" layoutX="264.0" layoutY="782.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#onAgainClick" style="-fx-background-color: FLORALWHITE;" text="Play Again!!" textFill="#835757" />-->
+ <!-- <Button fx:id="loadLastGameButton" text="Load Last Game" onAction="#handleLoadLastGame"/>-->
+ <!-- <Button fx:id="submitGuessButton" text="Submit Guess" onAction="#handleSubmitGuessButtonClicked" layoutX="200" layoutY="750" />-->
+
+</VBox>
